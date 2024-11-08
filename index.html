@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fustat:wght@200..800&family=Lalezar&family=Mada:wght@200..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+<link rel="icon" href="pics/Los-Pollos-Hermanos-Logo.jpg">
+  <title>Los-Pollos-Hermanos</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" >
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fustat:wght@200..800&family=Lalezar&family=Mada:wght@200..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&display=swap');
+ body{
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--darkChecken);
+}
+ </style>
+
+  <!-- nav-bar -->
+  <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #ffc107;     box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.90);">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="pics/Los-Pollos-Hermanos-Logo.jpg" width="60" height="75" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars" style="color: var(--darkChecken)"></i>
+      </button>
+    <style>
+      .navbar .navbar-nav .nav-link{
+        color: var(--lightChecken);
+      }
+      .navbar .navbar-nav .nav-link.active,
+      .navbar .navbar-nav .nav-link:focus,
+      .navbar .navbar-nav .nav-link:hover{
+        color: var(--red);
+      }
+    </style>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active" >
+            <a class="nav-link p-2 p-lg-4" href="#home"  style="font-weight: 700;">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-4" href="#about" style="font-weight: 700;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-4" href="#reviews" style="font-weight: 700;">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-4" href="#team" style="font-weight: 700;">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-4" href="#contact" style="font-weight: 700;">Contact</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+
+<div class="content mr-auto ml-auto" style="width: 100%; overflow: hidden;">
+ <!-- landing-page -->
+ <section id="home" class="jumbotron min-vh-100" style="padding-top: 150px; background-color: var(--white); border-radius: 0%; display: flex; align-items: center; flex-direction: column; margin-bottom: 100px;" >
+  <style>
+    .jumbotron{
+      background-image: linear-gradient(to bottom, #ff4d07a1 ,#ff4d07a1),url(pics/inside.jpg);
+      /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.40) ,rgba(255, 255, 255, 0.40)),url(pics/chicken.jpg); */
+      background-size: cover;
+      background-position: center;
+      height: 750px;
+    }
+    .btn{
+      color: var(--yellow);
+      /* background-color: var(--lightChecken); */
+      border: 3PX solid var(--yellow);
+      border-radius: 0%;
+      box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.70);
+    }
+    .btn:hover{
+      border-radius: 0%;
+      color: var(--white);
+      background-color: var(--yellow);
+    }
+  </style>
+  <div class="container">
+    <div class="row" style="display: flex; align-items: center; justify-content: center;">
+      <div class="col-12 " style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <h1 class="display-1 text-uppercase fw-semibold mb-5" style="color: var(--yellow); font-size: 56px; text-align: center; font-weight: 800;" data-aos="fade-up">Hola Amigos</h1>
+        <p class="lead" style=" color: var(--white); text-align: center;" data-aos="fade-up">Welcome at Los Pollos Hermanos resturant Website</p>
+        <hr class="my-4" style="background-color: var(--white); width: 100%;" data-aos="fade-up">
+        <p style="color: var(--white); text-align: center;" data-aos="fade-up">it is our pleasure to visit us on our site</p>
+        
+        <a class="btn btn-lg" href="#about" role="button" data-aos="fade-up">About Us</a>
+      </div>
+      <!-- <div class="col-xl-4 col-lg-7 col-md-6 mt-3">
+        <div class="los-logo">
+          <div class="los-image">
+            <img src="pics/Los-Pollos-Hermanos-Logo.jpg" width="100%" height="100%" alt="">
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+ </section>
+
+<!-- about -->
+<!-- <div class="company mr-auto ml-auto" id="section-com" style="width: 85%;">
+    <style>
+      .company{
+          background-color:var(--dry-blue);
+          border-radius: 0px;
+          width: 96%;
+      }
+      .kh{
+        color: var(--dry-blue);
+      }
+      hr{
+              width: 100%;
+        }
+      /* .txt{
+        border-radius: 10px;
+      } */
+  </style>
+  <div class="row mt-5 mb-5" style="display: flex; align-items: center; justify-content: center;">
+    <div class="col-xl-8 col-lg-5 col-md-6 ">
+    <div class="summaryDoc" style="color: white; font-weight: 200; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+      
+        <h1 class="headd display-4" style="text-align: center;">About Us</h1>
+      <p class="lead" style="color: black;">Los Pollos Hermanos</p>
+      <hr class="my-4 bg-scondary">
+      <p class="load" style="color: black; text-align: center;">Dear costumers, we as institution of food producers one of the biggest in the state at food industry and this ranking because of you ,so thank you very much for your trust on our food and ,so we looking to develop your food and rise the standard of your taste more and more </p>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-7 col-md-6 col-sm-12 mt-3">
+      <div class="summaryPic">
+        <img class="success" src="pics/hot-and-crispy-fried.png" width="100%" height="100%" alt="">
+      </div>
+      <style>
+        .success{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--yellow);
+          height: 100%;
+          width: 100%;
+          border-radius:0px ;
+          box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.30);
+        }
+        .success:hover{
+          transform: scale(1.05);
+          transition: 0.4s;
+          border-radius: 60px ;
+        }
+        .headd{
+          font-size: 70px;
+          color: var(--darkChecken);
+        }
+      </style>
+    </div>
+    </div>
+   
+   
+</div> -->
+ <section id="about" class="section-padding" style="margin-bottom: 100px;">
+  <div class="container"style="color: black;">
+      <div class="row" >
+          <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
+              <div class="section-title">
+                  <h1 class="display-4 fw-semibold mb-3" style="color: var(--darkChecken); font-weight: 800;" data-aos="fade-down">About us</h1>
+                  <div class="contras mt-2" style="display: flex; align-items: center; justify-content: center;">
+                    <div class="line" style="background-color: var(--yellow); height: 5px; width: 100px;"></div>
+                  </div>
+                  <p class="mb-5 mt-3">Dear customer nice to see you at Los Pollos Hermanos resturant website</p>
+              </div>
+          </div>
+      </div>
+      <div class="row justify-content-between align-items-center ">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="50" style="background-color: var(--lightChecken); box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.50);">
+              <img src="pics/los-pollos-hermanos-pocket.jpg" alt="">
+          </div>
+          <div data-aos="fade-left" data-aos-delay="150" class="col-lg-5">
+              <h1 style="color: var(--darkChecken); font-weight: 700;">Content of success</h1>
+              <p class="mt-3 mb-4">Dear costumers, we as institution of food producers one of the biggest in the state at food industry and this ranking because of you ,so thank you very much for your trust on our food,so we looking to develop your food and rise the standard of your taste more and more</p>
+              <div class="d-flex pt-4 mb-3">
+                  <div class="iconbox me-4">                    
+                    <i class="ri-fire-fill"></i>
+                  </div>
+                  <div style="padding-left: 10px;">
+                      <h5 style="font-weight: 700;">Mexican hot sauce</h5>
+                      <p>as a Mexican this is the main source of our success</p>
+                  </div>
+              </div>
+              <div class="d-flex mb-3">
+                  <div class="iconbox me-4">
+                    <i class="ri-restaurant-fill"></i>
+                  </div>
+                  <div style="padding-left: 10px;">
+                      <h5 style="font-weight: 700;">Crispe</h5>
+                      <p>ours is special and made by secret signeture for you and you will test it </p>
+                  </div>
+              </div>
+              <div class="d-flex">
+                  <div class="iconbox me-4">
+                    <i class="ri-wallet-fill"></i>
+                  </div>
+                  <div style="padding-left: 10px;">
+                      <h5 style="font-weight: 700;">fries</h5>
+                      <p>other main reason for increasing our finance because of many orders on this hot fries</p>
+                  </div>
+                  <style>
+                    .iconbox {
+                              width: 70px;
+                              height: 70px;
+                              display: inline-flex;
+                              align-items: center;
+                              justify-content: center;
+                              background-color: rgb(197, 197, 197);
+                              /* background-color: rgba(var(--teal), 0.9); */
+                              color: var(--red);
+                              font-size: 34px;
+                              flex: none;
+                             }
+                  </style>
+              </div>
+          </div>
+      </div>
+  </div>
+ </section>
+
+<!-- stats -->
+ <section id="counter" class="section-padding" style="margin-top: 100px;">
+<div class="container text-center">
+    <div class="row g-4">
+        <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+            <h1 class="text-light display-4" style="font-weight: 700; text-align: center;">120K</h1>
+            <h6 class="text-uppercase mb-0 text-light mt-3">Orders handed</h6>
+        </div>
+        <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+            <h1 class="text-light display-4" style="font-weight: 700;">8K</h1>
+            <h6 class="text-uppercase mb-0 text-light mt-3">Trusted Costumers</h6>
+        </div>
+        <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+            <h1 class="text-light display-4" style="font-weight: 700;">12</h1>
+            <h6 class="text-uppercase mb-0 text-light mt-3">Number of Branches</h6>
+        </div>
+        <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+            <h1 class="text-light display-4" style="font-weight: 700;">150</h1>
+            <h6 class="text-uppercase mb-0 text-light mt-3">Team Members</h6>
+        </div>
+    </div>
+</div>
+<style>
+  #counter {
+  background: linear-gradient(to bottom, #ff4d07a1 ,#ff4d07a1), url(pics/chicken.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+</style>
+ </section>
+
+<!-- reviews -->
+ <section id="reviews" class="section-padding bg-light" style="margin-top: 100px;">
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+            <div class="section-title">
+                <h1 class="display-4 fw-semibold mb-3" style="color: var(--darkChecken); font-weight: 700;">Testimonials</h1>
+                <div class="contras mt-2" style="display: flex; align-items: center; justify-content: center;">
+                  <div class="line" style="background-color: var(--yellow); height: 5px; width: 100px;">
+                  </div>
+                </div>
+                <div class="line mt-3" style="color: var(--lightChecken);"></div>
+                <p style="color: black">Dear Customers We love to give you some of warming message that we received from our trusted customers</p>
+            </div>
+        </div>
+    </div>
+    <div class="row gy-5 gx-4">
+        <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="150">
+            <div class="review">
+                <div class="review-head p-4 bg-white theme-shadow" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <div class="text-warning mb-2">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p style="text-align: center; color: black;">Aِre you kidding me this is the best chicken I have ever had it is crespe and not dry out and the seasoning are so fliverful.</p>
+                </div>
+                <div class="review-person mt-4 d-flex align-items-center" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <img class="rounded-square mb-4" src="pics/lalo_salamanca.png" style="background-color: #ffc107; border-radius: 10px;" width="100" height="100" alt="">
+                    <div class="ms-3" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <h5 style="color: var(--darkChecken);">Lalo Salamanca</h5>
+                        <small style="color: black;">Butcher</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="250">
+            <div class="review">
+                <div class="review-head p-4 bg-white theme-shadow" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <div class="text-warning mb-2">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p style="text-align: center; color: black;">These chicken are the best in the state I will come here every day to have my main dinner and I will never bored by these naughty dishes.</p>
+                </div>
+                <div class="review-person mt-4 d-flex align-items-center" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <img class="rounded-square mb-4" style="background-color: #ffc107; border-radius: 10px;" width="100" height="100" src="pics/hank.png" alt="">
+                    <div class="ms-3" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <h5 style="color: var(--darkChecken);">Hank Schrader</h5>
+                        <small style="color: black;">Police officer</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="350">
+            <div class="review">
+                <div class="review-head p-4 bg-white theme-shadow" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <div class="text-warning mb-2">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p style="text-align: center; color: black;">Those chicken are nuts ,I have a heart attack when I take bite from these criminal hot crispe chicken it is so amazing to have a dinner here</p>
+                </div>
+                <div class="review-person mt-4 d-flex align-items-center" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <img class="rounded-square mb-4" style="background-color: #ffc107; border-radius: 10px;" width="100" height="100" src="pics/nacho-varga.png" alt="">
+                    <div class="ms-3" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <h5 style="color: var(--darkChecken);">Nacho Varga</h5>
+                        <small style="color: black;">Buisness man</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+  .rounded-square:hover{
+    transform: scale(1.15);
+    transition: 0.4s;
+  }
+</style>
+ </section>
+
+<!-- team -->
+ <section id="team" class="section-padding" style="margin-top: 100px;">
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+            <div class="section-title">
+                <h1 class="display-4 fw-semibold mb-3" style="font-weight: 700;">Main Members</h1>
+                <div class="contras mt-2" style="display: flex; align-items: center; justify-content: center;">
+                  <div class="line" style="background-color: var(--yellow); height: 5px; width: 100px;"></div>
+                </div>
+                <div class="line mt-3"></div>
+                <p>Dear Customers those our main members who have the honor to serve your dishes by love</p>
+            </div>
+        </div>
+    </div>
+    <div class="row g-4 text-center ">
+        <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+            <div class="team-member image-zoom">
+                <div class="image-zoom-wrapper" style=" padding-top: 10px; padding-left: 10px; padding-right: 10px;">
+                    <img src="pics/gus_fring.png" alt="">
+                </div>
+                <div class="team-member-content">
+                    <h4 class="text-white">Gustavo Fring</h4>
+                    <p class="mb-0 text-white">The Owner</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+            <div class="team-member image-zoom">
+                <div class="image-zoom-wrapper" style=" padding-top: 10px; padding-left: 10px; padding-right: 10px;">
+                    <img src="pics/walter-white.png" alt="">
+                </div>
+                <div class="team-member-content">
+                    <h4 class="text-white">Walter White</h4>
+                    <p class="mb-0 text-white">The Chef</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+            <div class="team-member image-zoom">
+                <div class="image-zoom-wrapper" style=" padding-top: 10px; padding-left: 10px; padding-right: 10px;">
+                    <img src="pics/saul_goodman.png" alt="">
+                </div>
+                <div class="team-member-content">
+                    <h4 class="text-white">Saul Goodman</h4>
+                    <p class="mb-0 text-white">Authority Advisor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+  .team-member:hover{
+    background-color: var(--yellow);
+    border-radius: 20px;
+    transform: scale(1.05);
+    transition: 0.4s;
+  }
+  .team-member-content {
+  /* background-color: var(--red); */
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  width: calc(100% - 30px);
+  transform: translateX(-50%);
+  padding: 24px;
+  transition: 0.4s;
+  opacity: 0;
+ 
+  }
+  .team-member:hover .team-member-content {
+  opacity: 1;
+  bottom: 24px;
+  }
+</style>
+ </section>
+
+<!-- contact -->
+ <section class="section-padding bg-light" id="contact" style="margin-top: 100px;">
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+            <div class="section-title">
+                <h1 class="display-4 fw-semibold text-light mt-5 mb-3" style="color: var(--darkChecken); font-weight: 700;">Get in touch</h1>
+                <div class="contras mt-2" style="display: flex; align-items: center; justify-content: center;">
+                  <div class="line" style="background-color: var(--white); height: 5px; width: 100px;"></div>
+                </div>
+                <div class="line bg-white mt-3"></div>
+                <p class="text-white">We love to craft digital experiances for brands rather than crap and more lorem ipsums and do crazy skills</p>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
+        <div class="col-lg-8">
+            <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow" style="display: flex; align-items: center; justify-content: space-between;">
+                <!-- <div class="form-group col-lg-6">
+                    <input type="text" class="form-control" placeholder="Enter first name">
+                </div>
+                <div class="form-group col-lg-6">
+                    <input type="text" class="form-control" placeholder="Enter last name">
+                </div>
+                <div class="form-group col-lg-12">
+                    <input type="email" class="form-control" placeholder="Enter Email address">
+                </div>
+                <div class="form-group col-lg-12">
+                    <input type="text" class="form-control" placeholder="Enter subject">
+                </div>
+                <div class="form-group col-lg-12">
+                    <textarea name="message" rows="5" class="form-control" placeholder="Enter Message"></textarea>
+                </div>
+                <div class="form-group col-lg-12 d-grid">
+                    <button class="btn btn-brand">Send Message</button>
+                </div> -->
+                <div class="row no-gutters">
+                  <div class="col-md-6">
+                    <div class="card-body bg-light">
+                      <h5 class="card-title text-dark" style="font-weight: 600;">Call Us</h5>
+                      <p class="card-text text-dark">Dear Customers It is our pleasure to have a message from you</p>
+                      <p class="card-text text-dark"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <form action="">
+                        <div class="form-group">
+                          <label class="text-dark">Email</label>
+                          <input class="form-control w-80" type="email">
+                        </div>
+                        <div class="form-group">
+                          <label class="text-dark">Leave a Message</label>
+                          <textarea class="form-control w-80"></textarea>
+                        </div>
+                        
+                        <!-- <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" id="f">
+                          <label class="form-check-label text-light" for="f">check out</label>
+                        </div> -->
+                        
+                        <div class="btn btn-outline-warning">Send Now</div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="pics/hot-and-crispy-fried.png" class="card-img h-100" alt="...">
+                  </div>    
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<style>
+  #contact {
+  position: relative;
+  z-index: 2;
+  }
+
+  #contact::after {
+  content: "";
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(to bottom, #ff4d07a1 ,#ff4d07a1), url(pics/pannel.webp);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  }
+
+  #contact .form-control {
+  border-radius: 0;
+  }
+
+  #contact .form-control:focus {
+  box-shadow: none;
+  border-color: var(--yellow);
+  }
+</style>
+ </section>
+  </div>
+
+ <!-- Footer -->
+<!-- Footer -->
+<footer class="bg-body-tertiary text-center" style="background-color: var(--lightChecken); margin-top: 100px;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Youtube -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-youtube"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row" style="display: flex; align-items: center; justify-content: center;">
+          <!--Grid column-->
+          <div class="col-auto mb-4">
+            <!-- <p class="pt-2">
+              <strong>Sign now</strong>
+            </p> -->
+            <img src="pics/Los-Pollos-Hermanos-Logo.jpg" width="60" height="75" alt="" >
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="form5Example24" class="form-control" placeholder="Your Email"/>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="submit" class="btnn btn-outline mb-4">
+              Subscribe
+              <style>
+                .btnn{
+                  color: var(--yellow);
+                  background-color:var(--lightChecken);
+                  border: solid 3px var(--yellow);
+                  border-radius: 0%;
+                  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.70);
+                  padding: 8px;
+                }
+                .btnn:hover{
+                  border-radius: 0%;
+                  color: var(--white);
+                  background-color: var(--yellow);
+                  transition: 0.2s;
+                  cursor: pointer;
+                }
+              </style>
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p style="color: var(--white);">
+        Dear customers thank you so much for looking to our site we are waiting for your visiting to one of our branches.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-6 mb-6 mb-md-0">
+          <h5 class="text-uppercase" style="color: var(--darkChecken); font-weight: 600;">Products</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!" style="color: var(--yellow);">BBQ Crispe</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!" style="color: var(--yellow);">Chicken Fillet</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!" style="color: var(--yellow);">Mexican Taco</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-6 mb-6 mb-md-0">
+          <h5 class="text-uppercase" style="color: var(--darkChecken); font-weight: 600;">Main Branches</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!" style="color: var(--yellow);">Texas, TX 7851, US</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!" style="color: var(--yellow);">Chicago, CH 4702, US</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!" style="color: var(--yellow);">New York, NY 10012, US</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05); color: var(--darkChecken);">
+    © 2024 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="color: var(--yellow);">LPH.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<!-- Footer -->
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
